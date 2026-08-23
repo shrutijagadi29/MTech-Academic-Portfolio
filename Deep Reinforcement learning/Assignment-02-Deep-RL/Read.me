@@ -1,1 +1,83 @@
-# Assignment 02 DRL 
+# Assignment 02 - Deep Reinforcement Learning
+
+## Overview
+
+This assignment explores Deep Reinforcement Learning techniques through two different applications:
+
+1. Autonomous Drone Battery Management using DQN and Double DQN
+2. Sepsis Treatment Optimization using Actor-Critic
+
+---
+
+## Problem 1: Autonomous Drone Battery Management using DQN and DDQN
+
+The objective is to develop an autonomous drone surveillance environment with battery management and train reinforcement learning agents using:
+
+- Deep Q-Network (DQN)
+- Double Deep Q-Network (DDQN)
+
+The environment considers:
+
+- Drone position
+- Battery level
+- Charging stations
+- Dynamic Points of Interest (POIs)
+- Atmospheric disturbances
+- Energy consumption
+
+The performance of DQN and Double DQN is evaluated and compared using training and evaluation rewards.
+
+### Techniques Used
+
+- Deep Q-Network (DQN)
+- Double DQN (DDQN)
+- Experience Replay
+- Target Network
+- Epsilon-Greedy Exploration
+- TensorFlow/Keras
+
+---
+
+## Problem 2: Sepsis Treatment Optimization using Actor-Critic
+
+The objective is to model ICU treatment as a Reinforcement Learning environment and train an Actor-Critic agent to suggest medical interventions based on patient information.
+
+### State Features
+
+- Mean Blood Pressure (mean_bp)
+- Oxygen Saturation (spo2)
+- Respiratory Rate (resp_rate)
+- Age
+- Gender
+
+The environment contains 99 possible medical intervention actions.
+
+### Techniques Used
+
+- Actor-Critic Reinforcement Learning
+- Actor Network
+- Critic Network
+- Reward-based policy learning
+- TensorFlow/Keras
+- Clinical data preprocessing
+
+The reward function is based on the deviation of patient vital signs from defined target values.
+
+---
+
+## Technologies Used
+
+- Python
+- TensorFlow / Keras
+- NumPy
+- Pandas
+- Scikit-learn
+- Matplotlib
+
+---
+
+## Assignment Structure
+
+- `DQN-DDQN-Drone-Battery-Management/` - DQN and Double DQN implementation
+- `Actor-Critic-Sepsis-Treatment/` - Actor-Critic implementation
+- `README.md` - Assignment documentation
